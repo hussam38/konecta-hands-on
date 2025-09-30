@@ -44,12 +44,11 @@ This project manages AWS infrastructure using Terraform, implementing a multi-mo
 
 ## Task Requirements
 
-1. Install and configure AWS CLI and Terraform.  
-2. Discover and list all resources in my AWS account.  
-3. Identify which resources were created manually.  
-4. Import those resources into Terraform state.  
-5. Write Terraform code to represent those resources.  
-6. Verify with `terraform plan` that there are no changes required.
+1. Install and configure AWS CLI v2 and Terraform.  
+2. Discover all resources in my AWS account.  
+3. Import resources into Terraform state.  
+4. Write Terraform code to represent those resources.  
+5. Verify with `terraform plan` that there are no changes required.
 
 ## 1. AWS Login
 - Used the credentials provided in my email to log in at:  
@@ -75,12 +74,12 @@ This project manages AWS infrastructure using Terraform, implementing a multi-mo
    ```bash
    aws sts get-caller-identity
    ```
-![AWS STS Get Caller Identity](./screenshots/aws_sts_get_caller_identity.png)
+![AWS STS Get Caller Identity](./images/aws_identity.png)
 
 ---
 
 ## 3. Install Terraform
-1. Download and install Terraform from the [official installation page](https://developer.hashicorp.com/terraform/install).
+1. install Terraform from the [official installation page](https://developer.hashicorp.com/terraform/install).
 2. Verify installation:
    ```bash
    terraform -version
